@@ -57,11 +57,11 @@ export default function Home() {
 
   <div className="social-icons">
 
-    <a href="https://github.com/" target="_blank" className="social-circle">
+    <a href="https://github.com/vishwamdesai48" target="_blank" className="social-circle">
       <i className="fab fa-github"></i>
     </a>
 
-    <a href="https://linkedin.com/" target="_blank" className="social-circle">
+    <a href="https://www.linkedin.com/in/vishwam-desai48/" target="_blank" className="social-circle">
       <i className="fab fa-linkedin-in"></i>
     </a>
 
@@ -73,7 +73,7 @@ export default function Home() {
       <i className="fab fa-whatsapp"></i>
     </a>
 
-    <a href="https://instagram.com/" target="_blank" className="social-circle">
+    <a href="https://www.instagram.com/thunder_boy_48/?__pwa=1" target="_blank" className="social-circle">
       <i className="fab fa-instagram"></i>
     </a>
 

@@ -4,13 +4,14 @@ import {
   FaEnvelope,
   FaPhone,
   FaGraduationCap,
-  FaLaptopCode,
+ // FaLaptopCode,
   FaBrain,
   FaDownload,
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
 import "./resume.css";
+import ResumePDF from "../assets/resume.pdf";
 
 function Resume() {
   return (
@@ -112,11 +113,12 @@ function Resume() {
 
       {/* ----------- Embedded Resume PDF ----------- */}
       <div className="pdf-container">
-        <iframe
-          src="/resume.pdf"
-          title="Resume PDF"
+        {/* <embed
+          src="/src/resume.pdf"
+          type="application/pdf"
           className="resume-pdf"
-        ></iframe>
+        ></embed> */}
+        <embed src={ResumePDF} type="application/pdf" className="resume-pdf"></embed>
 
         <a href="/resume.pdf" download className="download-btn">
           <FaDownload /> Download Resume
@@ -137,5 +139,6 @@ function Resume() {
 }
 
 export default Resume;
+
 
 

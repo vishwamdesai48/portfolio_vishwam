@@ -22,7 +22,7 @@
 
 /* =============== GRID CENTERED =============== */
 .skills-grid {
-  width: 80%;                /* keeps everything centered */
+  width: 110%;                /* keeps everything centered */
   max-width: 1100px;         /* limits width for a perfect center */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -34,7 +34,8 @@
 /* =============== SKILL CARD =============== */
 .skill-card {
   position: relative;
-  height: 180px;
+  height: 120px;
+  width: 150px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
