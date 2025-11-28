@@ -1,41 +1,54 @@
-// Skills.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Skills.css";
 
 const skills = [
-  { name: "HTML", icon: "fa-brands fa-html5", percent: "95%" },
-  { name: "CSS", icon: "fa-brands fa-css3-alt", percent: "90%" },
-  { name: "JavaScript", icon: "fa-brands fa-js", percent: "85%" },
-  { name: "React", icon: "fa-brands fa-react", percent: "80%" },
+  { name: "HTML", icon: "fa-brands fa-html5", percent: "82%" },
+  { name: "UI/UX", icon: "fa-solid fa-bezier-curve", percent: "90%" },
+  { name: "BOOTSTRAP", icon: "fa-brands fa-bootstrap", percent: "81%" },
+  { name: "POWER BI", icon: "fa-solid fa-chart-pie", percent: "85%" },
+  { name: "JAVASCRIPT", icon: "fa-brands fa-js", percent: "70%" },
+  { name: "REACT", icon: "fa-brands fa-react", percent: "85%" },
+  { name: "GIT", icon: "fa-brands fa-git-alt", percent: "70%" },
+  { name: "GITHUB", icon: "fa-brands fa-github", percent: "85%" },
+  { name: "C++", icon: "fa-solid fa-code", percent: "70%" },
+  { name: "FIGMA", icon: "fa-brands fa-figma", percent: "89%" },
+  { name: "NPM", icon: "fa-brands fa-npm", percent: "70%" },
+  { name: "SQL", icon: "fa-solid fa-database", percent: "82%" },
+  { name: " DATA VISUALIZATION", icon: "fa-solid fa-chart-bar", percent: "95%" },
+  { name: "PHOTOSHOP", icon: "fa-solid fa-image", percent: "95%" },
+  { name: "PYTHON", icon: "fa-brands fa-python", percent: "75%" },
+  { name: "NODEJS", icon: "fa-brands fa-node", percent: "85%" },
 ];
 
 function Skills() {
   return (
-    <div className="skills-page">
-      <h2 className="skill-heading">My Skillset</h2>
+    <div className="skills-wrapper">
+      <h1 className="skills-title">My Skillset</h1>
 
-      {/* SKILLS GRID */}
-      <div className="skill-grid">
+      <div className="skills-grid">
         {skills.map((skill, index) => (
-          <Link to={`/skills/${skill.name}`} key={index}>
-            <div className="skill-card">
-              <i className={`${skill.icon} skill-icon`}></i>
+          <Link to="#" key={index} className="skill-card">
+
+            {/* ICON ALWAYS VISIBLE */}
+            <i className={`${skill.icon} skill-icon`}></i>
+
+            {/* NAME + PERCENT ONLY ON HOVER */}
+            <div className="skill-hover-content">
               <h3>{skill.name}</h3>
+              <p className="percent-text">{skill.percent}</p>
 
-              <div className="skill-hover-box">
-                <p className="percent-text">{skill.percent}</p>
-
-                <div className="progress-bar">
-                  <div
-                    className="progress-fill"
-                    style={{ width: skill.percent }}
-                  ></div>
-                </div>
+              <div className="progress-bar">
+                <div
+                  className="progress-fill"
+                  style={{ width: skill.percent }}
+                ></div>
               </div>
             </div>
           </Link>
         ))}
       </div>
+      
     </div>
   );
 }

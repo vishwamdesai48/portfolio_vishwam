@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/contact";
 import Skills from "./pages/Skills";
-import SimpleForm from "./components/SimpleForm";
+import Resume from "./components/resume";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Link to="/skills" className="nav-item">Skills</Link>
           <Link to="/about" className="nav-item">About Me</Link>
           <Link to="/contact" className="nav-item">Contact</Link>
-          <Link to="/form" className="nav-item">Form</Link>
+          <Link to="/Resume" className="nav-item">Resume</Link>
         </nav>
       </header>
 
@@ -34,7 +34,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/form" element={<SimpleForm />} />
+        <Route path="/Resume" element={<Resume />} />
       </Routes>
     </div>
   );

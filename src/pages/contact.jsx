@@ -25,10 +25,10 @@ const Contact = () => {
 
       {/* SOCIAL ICONS */}
       <div className="contact-socials">
-        <a href="https://github.com" target="_blank" className="social-icon">
+        <a href="https://github.com/vishwamdesai48" target="_blank" className="social-icon">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com" target="_blank" className="social-icon">
+        <a href="https://www.linkedin.com/in/vishwam-desai48/" target="_blank" className="social-icon">
           <FaLinkedin />
         </a>
         <a href="mailto:test@gmail.com" className="social-icon">
@@ -37,12 +37,12 @@ const Contact = () => {
         <a href="https://wa.me/00000000" target="_blank" className="social-icon">
           <FaWhatsapp />
         </a>
-        <a href="https://instagram.com" target="_blank" className="social-icon">
+        <a href="https://www.instagram.com/thunder_boy_48/?__pwa=1" target="_blank" className="social-icon">
           <FaInstagram />
         </a>
-        <a href="https://facebook.com" target="_blank" className="social-icon">
+        {/* <a href="https://facebook.com" target="_blank" className="social-icon">
           <FaFacebook />
-        </a>
+        </a> */}
       </div>
 
       {/* CONTACT FORM */}
